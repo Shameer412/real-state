@@ -1,0 +1,11 @@
+@import "tailwindcss";
+:root { --background: #ffffff; --foreground: #334155; --brand: #0f766e; --brand-dark: #115e59; --navy: #0f172a; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: Aptos, "Segoe UI Variable", "Segoe UI", Inter, system-ui, sans-serif; font-optical-sizing: auto; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+h1, h2, h3, strong { font-family: "Segoe UI Variable Display", "Aptos Display", Aptos, "Segoe UI", system-ui, sans-serif; }
+a, button, summary { transition: color 150ms ease-out, background-color 150ms ease-out, border-color 150ms ease-out, opacity 150ms ease-out, transform 150ms ease-out, box-shadow 150ms ease-out; }
+button, summary, select { cursor: pointer; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid #2dd4bf; outline-offset: 3px; }
+.eyebrow { color: var(--brand); font-size: .75rem; line-height: 1rem; font-weight: 800; text-transform: uppercase; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: 0.01ms !important; } }
